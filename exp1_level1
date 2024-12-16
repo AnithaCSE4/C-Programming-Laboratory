@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,sum,sub,mul,ds,m;
+    scanf("%d %d",&a,&b);
+    sum=a+b;
+    printf("%d + %d = %d\n",a,b,sum);
+    sub=a-b;
+    printf("%d - %d = %d\n",a,b,sub);
+    mul=a*b;
+    printf("%d * %d = %d\n",a,b,mul);
+    ds=a/b;
+    printf("%d / %d = %d\n",a,b,ds);
+    m=a%b;
+    printf("%d %% %d = %d\n",a,b,m);
+    return 0;
+
+}
