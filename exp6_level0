@@ -1,0 +1,58 @@
+#include<stdio.h>
+int power(int a,int b)
+{
+    int pow=1;
+    for(int i=1;i<=b;i++)
+    {
+        pow*=a;
+    }
+    return pow;
+}
+int amst(int n)
+{
+    int sum=0,t,rem,c=0;
+    t=n;
+    while(t!=0)
+    {
+        t=t/10;
+        c++;
+    }
+    t=n;
+    while(t!=0)
+    {
+        rem=t%10;
+        sum+=power(rem,c);
+        t/=10;
+    }
+    if(n==sum)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+    
+}
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    if(amst(num))
+    {
+        printf("amstrong");
+    }
+    else
+    {
+        printf("not amstrong");
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
