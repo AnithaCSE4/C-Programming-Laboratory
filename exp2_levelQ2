@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int number,num;
+    printf("enter the number");
+    scanf("%d",&number);
+    num=number%100;
+    printf("last two digits of number is:%02d",num);
+    return 0;
+    
+}
